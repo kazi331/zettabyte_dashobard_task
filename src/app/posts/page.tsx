@@ -34,7 +34,7 @@ export default function Posts() {
         <p className="text-sm text-gray-500">Showing {posts?.length || 0} posts</p>
         <button
           onClick={refetch}
-          className="px-4 py-2 text-sm font-medium text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+          className="px-4 py-2 text-sm font-medium text-primary bg-primary/10 rounded-lg hover:bg-primary/15 transition-colors cursor-pointer"
         >
           Refresh
         </button>

@@ -53,7 +53,7 @@ const Navigation = () => {
                                 key={link.href}
                                 href={link.href}
                                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus:ring-primary focus-visible:ring-offset-2 ${isActive(link.href)
-                                    ? 'bg-blue-100 text-primary border-b-2 border-primary'
+                                    ? 'bg-primary/10 text-primary border-b-2 border-primary'
                                     : 'text-gray-700 hover:text-primary/90 hover:bg-gray-50'
                                     }`}
                                 role="menuitem"

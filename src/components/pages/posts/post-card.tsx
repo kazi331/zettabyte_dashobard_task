@@ -16,7 +16,7 @@ export function PostCard({ post }: PostCardProps) {
 
   return (
     <Link href={`/posts/${post.id}`} className="group/link">
-      <Card className="h-full hover:shadow-lg transition-all duration-200 hover:border-blue-300">
+      <Card className="h-full hover:shadow-lg transition-all duration-200 hover:border-primary/40">
         <CardHeader className="bg-transparent">
           <h3 className="text-lg font-semibold text-gray-700 line-clamp-2 leading-tight">{capitalizeFirstLetter(post.title)}</h3>
           <div className="flex items-center space-x-2 text-xs text-gray-500 mt-2">
