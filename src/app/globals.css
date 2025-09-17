@@ -3,3 +3,83 @@
   --color-primary: oklch(60.6% 0.25 292.717);
   --color-accent: oklch(54.1% 0.281 293.009);
 }
+
+/* Custom css */
+
+@keyframes grow-1 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 60%;
+  }
+}
+
+@keyframes grow-2 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 80%;
+  }
+}
+
+@keyframes grow-3 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 45%;
+  }
+}
+
+@keyframes grow-4 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 70%;
+  }
+}
+
+@keyframes grow-5 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 90%;
+  }
+}
+
+@keyframes grow-6 {
+  from {
+    height: 0;
+  }
+  to {
+    height: 55%;
+  }
+}
+
+.animate-grow-1 {
+  animation: grow-1 1s ease-out 0.5s both;
+}
+
+.animate-grow-2 {
+  animation: grow-2 1s ease-out 0.7s both;
+}
+
+.animate-grow-3 {
+  animation: grow-3 1s ease-out 0.9s both;
+}
+
+.animate-grow-4 {
+  animation: grow-4 1s ease-out 1.1s both;
+}
+
+.animate-grow-5 {
+  animation: grow-5 1s ease-out 1.3s both;
+}
+
+.animate-grow-6 {
+  animation: grow-6 1s ease-out 1.5s both;
+}
