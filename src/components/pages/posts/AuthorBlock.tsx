@@ -20,7 +20,7 @@ export default function AuthorBlock({ author }: { author: User }) {
                     <h4 className="font-medium text-gray-900 mb-2">Company</h4>
                     <div className="space-y-1 text-sm text-gray-600">
                         <p className="font-medium">{author.company.name}</p>
-                        <p className="italic">"{author.company.catchPhrase}"</p>
+                        <p className="italic">&quot;{author.company.catchPhrase}&quot;</p>
                         <p>{author.company.bs}</p>
                     </div>
                 </div>
