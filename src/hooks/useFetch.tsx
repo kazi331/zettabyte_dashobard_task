@@ -63,11 +63,7 @@ export default function useFetch<T>(
         }
     }, [url, immediate]);
 
-    const refetch = useCallback(() => {
-        fetchData();
-    }, []);
 
-    return {
-        ...state, refetch,
-    };
+
+    return { ...state, refetch: fetchData };
 }

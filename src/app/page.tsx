@@ -1,4 +1,5 @@
 import ChartState from "@/components/pages/home/ChartState";
+import ErrorHandleDemo from "@/components/pages/home/ErrorHandleDemo";
 import Overview from "@/components/pages/home/Overview";
 import Stats from "@/components/pages/home/Stats";
 import Welcome from "@/components/pages/home/Welcome";
@@ -11,6 +12,7 @@ export default function Home() {
         <Welcome />
         <Stats />
         <Overview />
+        <ErrorHandleDemo />
         <ChartState />
       </Container>
     </div>
