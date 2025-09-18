@@ -32,7 +32,7 @@ const Navigation = () => {
     };
 
     return (
-        <nav className="bg-white shadow-lg border-b border-gray-200" role="navigation" aria-label="Main navigation">
+        <nav className="bg-white shadow-lg border-b border-gray-200" role="navigation" >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     {/* Logo/Brand */}

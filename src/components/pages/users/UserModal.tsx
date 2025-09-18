@@ -63,7 +63,7 @@ export default function UserModal({ isOpen, onClose, user }: UserModalProps) {
                 </section>
 
                 {/* Address Information */}
-                <section aria-labelledby="address-info-heading">
+                <section >
                     <h3 id="address-info-heading" className="text-lg font-medium text-gray-900 mb-3">
                         Address
                     </h3>
@@ -95,7 +95,7 @@ export default function UserModal({ isOpen, onClose, user }: UserModalProps) {
                         <blockquote className="text-sm text-gray-600 italic mb-2">
                             &ldquo;{user.company.catchPhrase}&rdquo;
                         </blockquote>
-                        <p className="text-xs text-gray-500" aria-label="Business description">
+                        <p className="text-xs text-gray-500">
                             {user.company.bs}
                         </p>
                     </div>

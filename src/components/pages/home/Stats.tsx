@@ -2,7 +2,7 @@ import { Card } from "@/components/shared/Card";
 
 export default function Stats() {
     return (
-        <section aria-labelledby="stats-heading" className="mb-8 sm:mb-12">
+        <section className="mb-8 sm:mb-12">
             <h2 id="stats-heading" className="sr-only">Dashboard Statistics</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <Card className="text-center hover:scale-105 transition-transform">

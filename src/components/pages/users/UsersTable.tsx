@@ -14,8 +14,8 @@ export default function UsersTable({ users, onUserClick }: UsersTableProps) {
     };
 
     return (
-        <div className="overflow-x-auto" role="region" aria-label="Users table">
-            <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden" aria-label="List of users with their details">
+        <div className="overflow-x-auto" role="region">
+            <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden" >
                 <thead className="bg-gray-50">
                     <tr role="row">
                         <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>

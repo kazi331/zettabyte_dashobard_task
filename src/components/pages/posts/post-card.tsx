@@ -20,8 +20,8 @@ export function PostCard({ post }: PostCardProps) {
         <CardHeader className="bg-transparent">
           <h3 className="text-lg font-semibold text-gray-700 line-clamp-2 leading-tight">{capitalizeFirstLetter(post.title)}</h3>
           <div className="flex items-center space-x-2 text-xs text-gray-500 mt-2">
-            <span aria-label={`Post number ${post.id}`}>Post #{post.id}</span>
-            <span aria-label={`Created by user ${post.userId}`}>User {post.userId}</span>
+            <span >Post #{post.id}</span>
+            <span>User {post.userId}</span>
           </div>
         </CardHeader>
 

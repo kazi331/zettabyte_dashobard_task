@@ -44,7 +44,6 @@ export default function Posts() {
           <div
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6"
             role="grid"
-            aria-label={`${posts.length} posts available`}
           >
             {posts.map((post, index) => (
               <div key={post.id} role="gridcell" aria-rowindex={Math.floor(index / 4) + 1} aria-colindex={(index % 4) + 1}>
