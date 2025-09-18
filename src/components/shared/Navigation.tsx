@@ -39,7 +39,7 @@ const Navigation = () => {
                     <div className="flex items-center">
                         <Link
                             href="/"
-                            className="flex-shrink-0 flex items-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-md px-2 py-1"
+                            className="flex-shrink-0 flex items-center focus:outline-none focus:ring-2 focus:ring-primary/60 focus:ring-offset-2 rounded-md px-2 py-1"
                             aria-label="Dashboard home"
                         >
                             <span className="text-xl font-bold text-gray-900">Dashboard</span>
@@ -52,7 +52,7 @@ const Navigation = () => {
                             <Link
                                 key={link.href}
                                 href={link.href}
-                                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus:ring-primary focus-visible:ring-offset-2 ${isActive(link.href)
+                                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus:ring-primary/60 focus-visible:ring-offset-2 ${isActive(link.href)
                                     ? 'bg-primary/10 text-primary border-b-2 border-primary'
                                     : 'text-gray-700 hover:text-primary/90 hover:bg-gray-50'
                                     }`}
@@ -70,7 +70,7 @@ const Navigation = () => {
                         <button
                             ref={menuButtonRef}
                             onClick={toggleMenu}
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary/60"
                             aria-expanded={isMenuOpen}
                             aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                             aria-controls="mobile-menu"
@@ -130,7 +130,7 @@ const Navigation = () => {
                             key={link.href}
                             href={link.href}
                             onClick={closeMenu}
-                            className={`block px-3 py-3 rounded-md text-base font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${isActive(link.href)
+                            className={`block px-3 py-3 rounded-md text-base font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/60 focus:ring-offset-2 ${isActive(link.href)
                                 ? 'bg-blue-100 text-primary border-l-4 border-primary'
                                 : 'text-gray-700 hover:text-accent hover:bg-white'
                                 }`}

@@ -31,11 +31,11 @@ export default function Overview() {
                         <nav className="space-y-3" aria-label="Quick navigation actions">
                             <Link
                                 href="/posts"
-                                className="block w-full text-left p-3 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                                className="block w-full text-left p-3 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary/60 focus:ring-offset-2"
                                 aria-label="Navigate to posts page to browse and manage content"
                             >
                                 <div className="font-medium text-blue-800">View All Posts</div>
-                                <div className="text-sm text-blue-600">Browse and manage content</div>
+                                <div className="text-sm text-primary">Browse and manage content</div>
                             </Link>
                             <Link
                                 href="/users"

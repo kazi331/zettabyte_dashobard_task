@@ -6,7 +6,7 @@ export default function Stats() {
             <h2 id="stats-heading" className="sr-only">Dashboard Statistics</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <Card className="text-center hover:scale-105 transition-transform">
-                    <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-2 animate-pulse" aria-hidden="true">100</div>
+                    <div className="text-2xl sm:text-3xl font-bold text-primary mb-2 animate-pulse" aria-hidden="true">100</div>
                     <div className="text-gray-600 font-medium">Total Posts</div>
                     <div className="text-sm text-gray-500 mt-1">Available content</div>
                 </Card>

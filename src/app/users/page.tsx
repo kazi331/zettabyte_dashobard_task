@@ -1,4 +1,5 @@
 "use client"
+import UserModal from "@/components/pages/users/UserModal";
 import UsersTable from "@/components/pages/users/UsersTable";
 import Container from "@/components/shared/Container";
 import ErrorMessage from "@/components/shared/ErrorMessage";
@@ -38,7 +39,7 @@ export default function Uusers() {
 
     if (error) {
         return (
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto my-10">
                 <ErrorMessage message={error} onRetry={refetch} />
             </div>
         )
@@ -49,7 +50,7 @@ export default function Uusers() {
                 <p className="text-sm text-gray-500">Showing {users?.length || 0} users</p>
                 <button
                     onClick={refetch}
-                    className="px-4 py-2 text-sm font-medium text-primary bg-primary/10 rounded-lg hover:bg-primary/15 transition-colors cursor-pointer"
+                    className="px-4 py-2 text-sm font-medium text-primary bg-primary/10 rounded-lg hover:bg-primary/15 transition-colors cursor-pointer focus-visible:ring-2 ring-primary/60/60 ring-offset-2 focus:outline-0"
                 >
                     Refresh
                 </button>
@@ -61,7 +62,7 @@ export default function Uusers() {
                             <UsersTable users={users} onUserClick={handleUserClick} />
                         </div>
 
-
+                        <UserModal isOpen={isModalOpen} onClose={handleCloseModal} user={selectedUser} />
                     </>
                 ) : (
                     <div className="text-center py-12" role="status">

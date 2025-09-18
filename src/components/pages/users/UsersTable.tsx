@@ -15,34 +15,12 @@ export default function UsersTable({ users, onUserClick }: UsersTableProps) {
 
     return (
         <div className="overflow-x-auto" role="region" aria-label="Users table">
-            <table
-                className="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden"
-                role="table"
-                aria-label="List of users with their details"
-            >
+            <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden" aria-label="List of users with their details">
                 <thead className="bg-gray-50">
                     <tr role="row">
-                        <th
-                            className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            scope="col"
-                            aria-sort="none"
-                        >
-                            Name
-                        </th>
-                        <th
-                            className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell"
-                            scope="col"
-                            aria-sort="none"
-                        >
-                            Email
-                        </th>
-                        <th
-                            className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
-                            scope="col"
-                            aria-sort="none"
-                        >
-                            Company
-                        </th>
+                        <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                        <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell">Email</th>
+                        <th className="px-3 sm:px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Company</th>
                     </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
@@ -51,11 +29,7 @@ export default function UsersTable({ users, onUserClick }: UsersTableProps) {
                             key={user.id}
                             onClick={() => onUserClick(user)}
                             onKeyDown={(e) => handleKeyDown(e, user)}
-                            className="hover:bg-gray-50 cursor-pointer transition-colors duration-150 focus:outline-none focus:bg-blue-50 focus:ring-2 focus:ring-primary focus:ring-inset"
-                            role="row"
-                            tabIndex={0}
-                            aria-label={`View details for ${user.name}`}
-                            aria-rowindex={index + 2}
+                            className="hover:bg-gray-50 cursor-pointer transition-colors duration-150 focus:outline-none focus:bg-blue-50 focus:ring-2 focus:ring-primary/60 focus:ring-inset"
                         >
                             <td className="px-3 sm:px-6 py-4" role="gridcell">
                                 <div className="text-sm font-medium text-gray-900">{user.name}</div>
