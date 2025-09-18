@@ -40,7 +40,6 @@ const Navigation = () => {
                         <Link
                             href="/"
                             className="flex-shrink-0 flex items-center focus:outline-none focus:ring-2 focus:ring-primary/60 focus:ring-offset-2 rounded-md px-2 py-1"
-                            aria-label="Dashboard home"
                         >
                             <span className="text-xl font-bold text-gray-900">Dashboard</span>
                         </Link>
@@ -58,7 +57,6 @@ const Navigation = () => {
                                     }`}
                                 role="menuitem"
                                 aria-current={isActive(link.href) ? 'page' : undefined}
-                                aria-label={link.description}
                             >
                                 {link.label}
                             </Link>
@@ -72,7 +70,6 @@ const Navigation = () => {
                             onClick={toggleMenu}
                             className="inline-flex items-center justify-center p-2 rounded-md text-gray-700  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary/60"
                             aria-expanded={isMenuOpen}
-                            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                             aria-controls="mobile-menu"
                         >
                             <span className="sr-only">{isMenuOpen ? "Close" : "Open"} main menu</span>
@@ -122,7 +119,6 @@ const Navigation = () => {
                     : 'hidden opacity-0 -translate-y-2'
                     }`}
                 role="menu"
-                aria-labelledby="mobile-menu-button"
             >
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 border-t border-gray-200 shadow-lg">
                     {navLinks.map((link) => (
@@ -136,7 +132,6 @@ const Navigation = () => {
                                 }`}
                             role="menuitem"
                             aria-current={isActive(link.href) ? 'page' : undefined}
-                            aria-label={link.description}
                             tabIndex={isMenuOpen ? 0 : -1}
                         >
                             {link.label}
