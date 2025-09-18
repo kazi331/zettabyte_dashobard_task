@@ -28,7 +28,6 @@ export default function ErrorHandleDemo() {
                             <button
                                 onClick={handleErrorDemo}
                                 className="bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus:ring-offset-2"
-                                aria-describedby="error-demo-description"
                             >
                                 Test Error Handling
                             </button>
